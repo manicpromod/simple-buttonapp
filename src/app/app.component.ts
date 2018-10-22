@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+oddNumbers: number[] = [];
+evenNumbers: number[] = [];
+
+  startFunction(num:number) {
+    console.log(num);
+    if(num % 2==0){
+      this.evenNumbers.push(num);
+    } else{
+      this.oddNumbers.push(num);
+    }
+}
 }
